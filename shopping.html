@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--kat-->
+
+<html lang="en">
+    <head>
+        <title>Shopping Discount</title>
+        <meta charset="utf-8"/>
+    </head>
+<body>
+    <h1>Questions: 
+        <br>1. You could use if statements to confirm an email when submitting a form. 
+        <br>2. You could use an if statement for a calendar to alert for a specific event. 
+    </h1>
+    <h2>Answers:
+        <br>1.string
+        <br>2.string
+    </h2>
+
+<style>
+body{
+    background: lightblue;
+    font-size: 15px;
+    font-family:monospace;
+    align-items: center;
+    padding: 25px;
+    margin: 30px;
+}
+</style>
+
+<script>
+
+//ask customer their total
+let total = parseInt(prompt("Enter your total: "));
+
+//confirm customer total
+let confirmed = confirm(`Your total is $${total.toFixed(2)}. Click OK to continue.`);
+
+//compare if the< total is >50
+
+if (total <= 50) {
+    alert("You do not qualify for a discount.");
+}
+
+if (total >= 75) {
+    alert("10% Discount off total");
+}
+if(total >= 100) {
+    alert("20% Discount off total");
+}
+ 
+</script>
+</body>
+</html>
