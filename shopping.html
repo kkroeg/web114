@@ -37,15 +37,15 @@ let confirmed = confirm(`Your total is $${total.toFixed(2)}. Click OK to continu
 
 //compare if the< total is >50
 
-if (total <= 50) {
-    alert("You do not qualify for a discount.");
+if (total >= 100) {
+    alert("20% Discount off total");
 }
 
 if (total >= 75) {
     alert("10% Discount off total");
 }
-if(total >= 100) {
-    alert("20% Discount off total");
+if(total <= 50) {
+    alert("You do not qualify for a discount.");
 }
  
 </script>
