@@ -2,6 +2,7 @@ let entryCount = 0;
 let username = prompt("Enter your name: ");
 let Gas = calcGasAvg();
 
+confirm(`${username}'s average weekly gas bill is $${Gas.toFixed(2)}`);
 
 function calcGasAvg() {
  let count = 0;
