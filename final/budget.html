@@ -1,0 +1,26 @@
+<!---Kat Kroeger 12/9, final project-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Budget Calculator</h1>
+        <form id="budgetForm">
+            <label for="income">Total Income:</label>
+        <input type="number" id="income" placeholder="Enter your income" required>
+        <label for="expense">Total Expenses:</label>
+        <input type="number" id="expense" placeholder="Enter your expenses" required>
+
+        <button type="button" id="calcBtn">Calculate</button>
+        </form>
+    <div class="result">
+        <h2>Remaining Budget: <span id="remainingBudget">$0</span></h2>
+    </div>        
+    </div>
+
+    <script src="budget.js"></script>
+</body>
+</html>
